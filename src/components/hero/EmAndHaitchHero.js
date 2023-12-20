@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
+import { Link } from "react-scroll";
 
 import Header, {NavLinks,
   NavLink as NavLinkBase,
@@ -17,13 +18,13 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
 import DesignIllustration from "../../images/design-illustration.svg";
 
-const Container = tw.div`relative`;
+const Container = tw.div`relative `;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
 
-const NavLink = tw(NavLinkBase)`lg:text-black lg:hocus:text-teal-300 lg:hocus:border-teal-100`;
-const PrimaryLink = tw(PrimaryLinkBase)`shadow-raised lg:bg-teal-400 lg:hocus:bg-teal-600`;
+const NavLink = tw(NavLinkBase)`lg:text-black lg:hocus:text-primary-500 lg:hocus:border-primary-300`;
+const PrimaryLink = tw(PrimaryLinkBase)`shadow-raised lg:bg-primary-500 lg:hocus:bg-primary-600`;
 
 const Heading = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
 const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-medium text-gray-600 max-w-lg mx-auto lg:mx-0`;
@@ -78,9 +79,11 @@ export default ({
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
   const navLinks = [
+
+    
     <NavLinks key={1}>
-      <NavLink href="#about" smooth={true} spy={true} duration={1500}>About</NavLink>
-      <NavLink href="#">Features</NavLink>
+      <NavLink href="#about" smooth={true} spy={true} duration={2000} >About</NavLink>
+      <NavLink href="#features">Features</NavLink>
       <NavLink href="#">Services</NavLink>
       <NavLink href="#">Testimonial</NavLink>
       <NavLink href="#">Team</NavLink>
@@ -90,7 +93,7 @@ export default ({
 
   return (
     <>
-      <Header links={navLinks}/>
+      <Header links={navLinks} />
       <Container>
         <TwoColumn>
           <LeftColumn>

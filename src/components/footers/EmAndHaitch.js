@@ -35,9 +35,10 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
-            
+            <LogoImg src={logo} /> 
           </LogoContainer>
+          <div className="mx-auto text-center">#65, Dimrose Road, Yenagoa Bayelsa State </div>
+          <span className="mx-auto text-center">Tel: +2348062141978</span>
           <LinksContainer>
             <Link href="#">Home</Link>
             <Link href="#">About</Link>

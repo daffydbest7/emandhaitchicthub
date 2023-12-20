@@ -8,7 +8,7 @@ import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const TwoColumn = tw.div`flex flex-col-reverse md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [
@@ -35,7 +35,7 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
-  tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
+  tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0 my-4`,
   props.buttonRounded && tw`rounded-full`
 ]);
 
@@ -63,7 +63,7 @@ export default ({
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
   return (
-    <Container id="about" scroll={true}>
+    <Container id="about" name="about" scroll={true}>
       <TwoColumn>
         <ImageColumn>
           <Image css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded}/>

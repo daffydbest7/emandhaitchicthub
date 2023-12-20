@@ -86,7 +86,7 @@ export default ({
    *  4) url - the url that the card should goto on click
    */
   return (
-    <Container>
+    <Container name="features">
       <ContentWithPaddingXl>
         {subheading && <Subheading>{subheading}</Subheading>}
         {heading && <Heading>{heading}</Heading>}

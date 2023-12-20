@@ -8,6 +8,7 @@ import Features from "components/features/ThreeColSimple.js";
 import MainFeature from "components/features/EmAndHaitch";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Testimonial from "components/testimonials/EmAndHaitch";
+import Faq from "components/faqs/EmAndHaitch";
 import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/EmAndHaitch";
 import about from "../images/emandhaitch/about.jpg";
@@ -38,7 +39,7 @@ export default () => {
         primaryButtonText="Reach Out"
         watchVideoButtonText="Meet The CEO"
       />
-      <MainFeature id="about" name="about"
+      <MainFeature 
         subheading={<Subheading>Established Since 2018</Subheading>}
         heading={
           <>
@@ -65,7 +66,7 @@ export default () => {
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
 
-      <Features
+      <Features 
         heading={
           <>
             Amazing <HighlightedText>Services.</HighlightedText>
@@ -138,6 +139,7 @@ export default () => {
         subheading=""
         heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
       />
+      <Faq/>
       <GetStarted/>
       <Footer />
     </AnimationRevealPage>

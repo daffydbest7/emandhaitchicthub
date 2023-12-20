@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { Link } from "react-scroll";
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
@@ -10,9 +11,9 @@ import logo from "../../images/emandhaitchlogo.jpg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
-const Header = tw.header`
+const Header = tw.header`w-full fixed top-0 lg:xl:2xl:top-[20px] left-0 right-0 z-50
   flex justify-between items-center
-  max-w-screen-xl mx-auto
+  max-w-screen-xl mx-auto bg-gray-100 
 `;
 
 export const NavLinks = tw.div`inline-block`;
@@ -25,6 +26,7 @@ export const NavLink = tw.a`
   font-semibold tracking-wide transition duration-300
   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
 `;
+
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
@@ -71,8 +73,10 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
   const defaultLinks = [
+
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
+      
+      <NavLink to='about'>About</NavLink>
       <NavLink href="/#">Blog</NavLink>
       <NavLink href="/#">Pricing</NavLink>
       <NavLink href="/#">Contact Us</NavLink>
@@ -109,7 +113,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
         <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
           {links}
         </MobileNavLinks>
-        <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+        <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open " : "closed"}>
           {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
         </NavToggle>
       </MobileNavLinksContainer>
