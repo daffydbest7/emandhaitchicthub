@@ -114,7 +114,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
           {links}
         </MobileNavLinks>
         <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open " : "closed"}>
-          {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
+          {showNavLinks ? <CloseIcon tw="w-6 h-6 mr-2" /> : <MenuIcon tw="w-6 h-6 mr-2" />}
         </NavToggle>
       </MobileNavLinksContainer>
     </Header>
@@ -130,22 +130,22 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 const collapseBreakPointCssMap = {
   sm: {
     mobileNavLinks: tw`sm:hidden`,
-    desktopNavLinks: tw`sm:flex`,
+    desktopNavLinks: tw`sm:flex w-full`,
     mobileNavLinksContainer: tw`sm:hidden`
   },
   md: {
     mobileNavLinks: tw`md:hidden`,
-    desktopNavLinks: tw`md:flex`,
+    desktopNavLinks: tw`md:flex w-full`,
     mobileNavLinksContainer: tw`md:hidden`
   },
   lg: {
     mobileNavLinks: tw`lg:hidden`,
-    desktopNavLinks: tw`lg:flex`,
+    desktopNavLinks: tw`lg:flex w-full`,
     mobileNavLinksContainer: tw`lg:hidden`
   },
   xl: {
     mobileNavLinks: tw`lg:hidden`,
-    desktopNavLinks: tw`lg:flex`,
+    desktopNavLinks: tw`lg:flex w-full`,
     mobileNavLinksContainer: tw`lg:hidden`
   }
 };
