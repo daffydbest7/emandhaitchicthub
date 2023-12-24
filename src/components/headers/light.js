@@ -11,7 +11,7 @@ import logo from "../../images/emandhaitchlogo.jpg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
-const Header = tw.header`w-full lg:w-[90vw] fixed top-0 pt-[10px]  left-[5px] right-[10px] z-50
+const Header = tw.header`w-[95vw] fixed top-0  pt-[10px]  left-0 right-0 z-50
   flex justify-between items-center
   max-w-screen-xl mx-auto bg-gray-100 rounded-md 
 `;
