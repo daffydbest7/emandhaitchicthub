@@ -31,7 +31,7 @@ const SocialLink = styled.a`
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
 export default () => {
   return (
-    <Container>
+    <Container id="contact" name="contact">
       <Content>
         <Row>
           <LogoContainer>
@@ -41,10 +41,10 @@ export default () => {
           <span className="mx-auto text-center">Tel: +2348062141978</span>
           <LinksContainer>
             <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Services</Link>
-            <Link href="#">Features</Link>
+            <Link href="#about">About</Link>
+            <Link href="#services">Services</Link>
+            <Link href="#faq">Faq</Link>
+            <Link href="#features">Features</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="#">

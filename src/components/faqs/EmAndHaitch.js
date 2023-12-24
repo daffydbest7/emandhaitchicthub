@@ -111,7 +111,7 @@ export default ({
     return null;
   });
   return (
-    <PrimaryBackgroundContainer>
+    <PrimaryBackgroundContainer id="faq" name="faq">
       <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}

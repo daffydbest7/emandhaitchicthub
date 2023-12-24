@@ -78,7 +78,7 @@ export default ({
   if (!statistics) statistics = defaultStatistics;
 
   return (
-    <Container>
+    <Container id="features" name="features"> 
       <TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
         <ImageColumn css={imageContainerCss}>
           {imageInsideDiv ? <Image imageSrc={imageSrc} css={imageCss} /> : <img src={imageSrc} css={imageCss} alt="" />}

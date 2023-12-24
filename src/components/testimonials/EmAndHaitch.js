@@ -111,7 +111,7 @@ export default ({
   const [textSliderRef, setTextSliderRef] = useState(null);
 
   return (
-    <Container>
+    <Container id="testimonials" name="testimonials">
       <Content>
         <HeadingInfo tw="text-center lg:hidden" subheading={subheading} heading={heading} description={description} />
         <TestimonialsContainer>
