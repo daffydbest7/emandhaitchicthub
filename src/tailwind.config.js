@@ -27,6 +27,7 @@ module.exports = {
         800: '#460fb3',
         900: '#3c0d99',
       },
+      emandhaitch: '#279AA5',
 
       secondary: {
         100: '#7c8ba1',
