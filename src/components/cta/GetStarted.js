@@ -25,12 +25,12 @@ const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 tr
 export default ({
   text = "Our topnotch services speaks loud.",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "#",
+  primaryLinkUrl = "#contact",
   secondaryLinkUrl = "#",
   pushDownFooter = true
 }) => {
   return (
-    <Container css={pushDownFooter && tw`mb-20 lg:mb-24`}>
+    <Container >
       <ContentWithPaddingXl>
       <PrimaryBackgroundContainer>
         <Row>

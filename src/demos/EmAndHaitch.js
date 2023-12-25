@@ -19,7 +19,7 @@ import database from "../images/emandhaitch/database-svgrepo-com.svg";
 import videosurvey from "../images/emandhaitch/user-speak-rounded-svgrepo-com.svg";
 import network from "../images/emandhaitch/networking-marketing-svgrepo-com.svg";
 import why1 from "../images/emandhaitch/why1.jpg";
-import why2 from "../images/emandhaitch/why2.jpg";
+import ContactUs from "pages/ContactUs";
 
 
 export default () => {
@@ -29,6 +29,7 @@ export default () => {
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
   return (
+    
     <AnimationRevealPage>
       <Hero
         heading={<>Creative & Innovative <HighlightedText>ICT Solutions</HighlightedText></>}
@@ -37,7 +38,7 @@ export default () => {
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Reach Out"
-        watchVideoButtonText="Meet The CEO"
+        
       />
       <MainFeature 
         subheading={<Subheading>Established Since 2018</Subheading>}
@@ -77,31 +78,31 @@ export default () => {
             imageSrc: data,
             title: "Data Analysis",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "#"
+            url: "#contactcontact"
           },
           {
             imageSrc: web,
             title: "Website Development",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "#"
+            url: "#contact"
           },
           {
             imageSrc: database,
             title: "Database Management",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "#"
+            url: "#contact"
           },
           {
             imageSrc: network,
             title: "Internet Installation and Networking",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "#"
+            url: "#contact"
           },
           {
             imageSrc: videosurvey,
             title: "Video Surveillance",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "#"
+            url: "#contact"
           }
         ]}
 
@@ -126,7 +127,7 @@ export default () => {
           }
         ]}
         primaryButtonText="Contact Us"
-        primaryButtonUrl="#"
+        primaryButtonUrl="#contact"
         imageInsideDiv={false}
         imageSrc={why1}
         imageCss={Object.assign(tw`bg-cover`, imageCss)}
@@ -141,6 +142,7 @@ export default () => {
       />
       <Faq/>
       <GetStarted/>
+      <ContactUs/>
       <Footer />
     </AnimationRevealPage>
   );

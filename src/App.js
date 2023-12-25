@@ -118,13 +118,8 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/components/:type/:name" element={<ComponentRenderer />} /> 
           <Route path="/" element={<EmAndHaitch />} />
-          <Route path="/saas" element={<SaaSProductLandingPage />} />
-          <Route path="/agency" element={<AgencyLandingPage />} />
-          <Route path="/hotel" element={<HotelTravelLandingPage />} />
-          <Route path="/restaurant" element={<RestaurantLandingPage />} />
         </Routes>
       </Router>
     </>

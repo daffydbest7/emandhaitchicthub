@@ -31,14 +31,12 @@ const SocialLink = styled.a`
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
 export default () => {
   return (
-    <Container id="contact" name="contact">
+    <Container >
       <Content>
         <Row>
           <LogoContainer>
             <LogoImg src={logo} /> 
           </LogoContainer>
-          <div className="mx-auto text-center">#65, Dimrose Road, Yenagoa Bayelsa State </div>
-          <span className="mx-auto text-center">Tel: +2348062141978</span>
           <LinksContainer>
             <Link href="#">Home</Link>
             <Link href="#about">About</Link>
