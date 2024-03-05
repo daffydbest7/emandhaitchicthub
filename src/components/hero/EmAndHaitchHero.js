@@ -93,7 +93,7 @@ export default ({
 
   return (
     <>
-      <Header links={navLinks} />
+      <Header links={navLinks}/>
       <Container>
         <TwoColumn>
           <LeftColumn>

@@ -16,24 +16,7 @@ export default () => {
     <AnimationRevealPage>
     
       <ContactUsForm id="contact"/>
-      <ContactDetails
-        cards={[
-          {
-            
-            description: (
-              <>
-                <Address>
-                  <AddressLine>No 15, Sir Churchill Williams Street, Okaka</AddressLine>
-                  <AddressLine>Yenagoa, Bayelsa State, Nigeria. 569101</AddressLine>
-                </Address>
-                <Email>info@emandhaitchicthub.ng</Email>
-                <Phone>+234(906)850-9555 <br/> +234(705)847-0486</Phone>
-              </>
-            )
-          },
-          
-        ]}
-      />
+     
     
     </AnimationRevealPage>
   );
