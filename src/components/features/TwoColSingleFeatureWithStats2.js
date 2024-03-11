@@ -46,7 +46,7 @@ export default ({
       We have been doing this <wbr /> since <span tw="text-emandhaitch">1999.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "eMandHaitch ICT Hub stands out as a premier choice for businesses seeking innovative ICT solutions. With over 5 years of industry experience, we offer top-notch services including data analysis, web development, database administration, networking, and video surveillance. Our commitment to excellence, tailored solutions, and dedication to customer satisfaction ensure that clients receive cutting-edge technology solutions that drive growth, efficiency, and security for their businesses.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = StatsIllustrationSrc,

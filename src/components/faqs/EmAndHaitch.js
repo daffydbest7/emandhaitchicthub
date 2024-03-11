@@ -30,7 +30,7 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 export default ({
   subheading = "",
   heading = "Frequently Asked Questions",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Welcome to our Frequently Asked Questions (FAQ) section! Here, we address common inquiries about our services, processes, and policies to provide clarity and support. Browse through our FAQ to find quick answers to your queries or contact our team for further assistance.",
   faqs = [
     
     {

@@ -85,7 +85,6 @@ export default ({
       <NavLink href="#about" smooth={true} spy={true} duration={2000} >About</NavLink>
       <NavLink href="#features">Features</NavLink>
       <NavLink href="#services">Services</NavLink>
-      <NavLink href="#testimonials">Testimonial</NavLink>
       <NavLink href="#faq">Faq</NavLink>
       <PrimaryLink href="#contact">Contact</PrimaryLink>
     </NavLinks>

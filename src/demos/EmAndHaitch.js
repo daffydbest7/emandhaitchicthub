@@ -7,10 +7,10 @@ import Features from "components/features/ThreeColSimple.js";
 //import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature from "components/features/EmAndHaitch";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import Testimonial from "components/testimonials/EmAndHaitch";
+//import Testimonial from "components/testimonials/EmAndHaitch";
 import Faq from "components/faqs/EmAndHaitch";
-import GetStarted from "components/cta/GetStarted";
-import Footer from "components/footers/EmAndHaitch";
+//import GetStarted from "components/cta/GetStarted";
+import Footer from "components/footers/FiveColumnWithInputForm";
 import about from "../images/emandhaitch/about.jpg";
 import emandhaitch1 from "../images/emandhaitch/emandhaitch_hero1.jpg"
 import data from "../images/emandhaitch/data-report-svgrepo-com.svg";
@@ -26,14 +26,14 @@ export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-emandhaitch text-gray-100 px-4 transform -skew-x-12 inline-block`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-emandhaitch px-4 transform -skew-x-12 inline-block`;
-  const Description = tw.span`inline-block mt-8`;
+  const Description = tw.span`inline-block mt-8 text-justify`;
   const imageCss = tw`rounded-4xl`;
   return (
     
     <AnimationRevealPage>
       <Hero
         heading={<>Creative & Innovative <HighlightedText>ICT Solutions</HighlightedText></>}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Welcome to eMandHaitch ICT Hub – your gateway to cutting-edge ICT solutions! Dive into innovation with our top-tier services, including expert data analysis, bespoke web development, seamless database administration, robust networking solutions, and advanced video surveillance systems. Elevate your digital presence and efficiency with our creative solutions tailored to your needs. Join us on the forefront of technology and unlock the full potential of your business with eMandHaitch ICT Hub!"
         imageSrc={emandhaitch1}
         imageCss={imageCss}
         imageDecoratorBlob={true}
@@ -50,11 +50,7 @@ export default () => {
         }
         description={
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Building on a foundation of over 5 years of experience, eMandHaitch ICT Hub has been a trusted partner in the digital realm, crafting bespoke solutions that drive success for businesses of all sizes. With a track record of innovation and excellence, our team continues to harness the power of technology to propel our clients forward in the ever-evolving digital landscape.
           </Description>
         }
         buttonRounded={false}
@@ -77,31 +73,31 @@ export default () => {
           {
             imageSrc: data,
             title: "Data Analysis",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "#contactcontact"
+            description: "Uncover insights and make data-driven decisions with our expert analysis services.",
+            url: "#contact"
           },
           {
             imageSrc: web,
             title: "Website Development",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
+            description: "Elevate your online presence with custom-designed websites tailored to your brand and audience.",
             url: "#contact"
           },
           {
             imageSrc: database,
             title: "Database Management",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
+            description: " Ensure seamless data management and security with our professional database administration services.",
             url: "#contact"
           },
           {
             imageSrc: network,
             title: "Internet Installation and Networking",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
+            description: " Stay connected and optimized with our reliable networking solutions for seamless communication and collaboration.",
             url: "#contact"
           },
           {
             imageSrc: videosurvey,
             title: "Video Surveillance",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
+            description: " Enhance security and peace of mind with our advanced video surveillance systems for comprehensive monitoring and protection.",
             url: "#contact"
           }
         ]}
@@ -136,12 +132,17 @@ export default () => {
         imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
         textOnLeft={true}
       />
-      <Testimonial
+      {/**
+       
+         <Testimonial
         subheading=""
         heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
       />
+
+       <GetStarted/>
+       */}
+    
       <Faq/>
-      <GetStarted/>
       <ContactUs/>
       <Footer />
     </AnimationRevealPage>
